@@ -1,0 +1,32 @@
+/* Container styles */
+.contact-container {
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Header styles */
+#contact h1 {
+    font-size: 2rem;
+    color: bisque;
+    margin-bottom: 1rem;
+}
+
+/* Contact icons styles */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icons a {
+    font-size: 2rem;
+    color: #007BFF; /* Change the color as needed */
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+.contact-icons a:hover {
+    color: #0056b3; /* Change the hover color as needed */
+}

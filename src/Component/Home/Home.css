@@ -1,0 +1,39 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    width: 100%;
+    height: 95vh;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+}
+
+.myPic{
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.myPic img{
+    width: 250px;
+    border: 2px solid purple;
+    border-radius: 50%;
+}
+
+.myText h1{
+    color: thistle;
+     
+}
+
+.word {
+    text-align: center;
+    margin: 20px;
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+
+@media (max-width: 430) {
+    #home{
+        margin-top: 60px;
+    }
+}
