@@ -5,7 +5,6 @@ import sanjeet from './mypic.png';
 import Contact from '../Contact/Contact';
 import About from '../About/About';
 import { useState, useEffect } from 'react'; // Import useState and useEffect from React
-import $ from 'jquery'; // Import jQuery
 import Skills from '../Skills/Skills';
 
 const backgrounds = [
@@ -28,17 +27,17 @@ const Home = () => {
 
     useEffect(() => {
         // Your JavaScript code here
-        var words = ["Engineer", "Programmer", "Full Stack Developer"],
-            part,
-            i = 0,
-            offset = 0,
-            len = words.length,
-            forwards = true,
-            skip_count = 0,
-            skip_delay = 15,
-            speed = 70;
+        let words = ["Engineer", "Programmer", "Full Stack Developer"];
+        let part;
+        let i = 0;
+        let offset = 0;
+        let len = words.length;
+        let forwards = true;
+        let skip_count = 0;
+        let skip_delay = 15;
+        let speed = 50;
 
-        var wordflick = function () {
+        const wordflick = function () {
             setInterval(function () {
                 if (forwards) {
                     if (offset >= words[i].length) {
@@ -66,11 +65,14 @@ const Home = () => {
                         offset--;
                     }
                 }
-                $('.word').text(part);
+                const wordElement = document.querySelector('.word');
+                if (wordElement) {
+                    wordElement.innerHTML = part;
+                }
             }, speed);
         };
 
-        $(document).ready(function () {
+        window.addEventListener('load', () => {
             wordflick();
         });
 
@@ -79,7 +81,6 @@ const Home = () => {
 
         // Clean up the interval when the component unmounts
         return () => {
-            clearInterval(wordflick);
             clearInterval(interval);
         };
     }, []); 
