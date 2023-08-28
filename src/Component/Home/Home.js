@@ -35,7 +35,7 @@ const Home = () => {
         let forwards = true;
         let skip_count = 0;
         let skip_delay = 15;
-        let speed = 100;
+        let speed = 70;
 
         const wordflick = function () {
             setInterval(function () {
