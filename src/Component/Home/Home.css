@@ -32,8 +32,9 @@
     text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 }
 
-@media (max-width: 430) {
+/* @media (max-width: 423px) {
     #home{
         margin-top: 60px;
     }
-}
+    
+} */

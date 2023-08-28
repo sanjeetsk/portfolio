@@ -20,7 +20,7 @@ code {
     monospace;
 }
 
-@media (max-width:430px) {
+@media (max-width:423px) {
   body{
     margin-top: 67px;
   }
