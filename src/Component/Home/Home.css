@@ -7,34 +7,50 @@
     background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
 
-.myPic{
+.myPic {
     margin: 3rem;
     display: flex;
     justify-content: center;
 }
 
-.myPic img{
+.myPic img {
     width: 250px;
     border: 2px solid purple;
     border-radius: 50%;
 }
 
-.myText h1{
+.myText h1 {
     color: thistle;
-     
+
 }
 
-.word {
+.word-container{
     text-align: center;
+}
+
+.word{
+    display: none;
+}
+
+.activeTxt{
+    display: block;
     margin: 20px;
     color: white;
-    font: 700 normal 2.5em 'tahoma';
+    font: 700 normal 2em 'tahoma';
     text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    animation: fade 5s linear infinite;
+    opacity: 0;
 }
 
-/* @media (max-width: 423px) {
-    #home{
-        margin-top: 60px;
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 0;
     }
-    
-} */
+
+    10%,
+    90% {
+        opacity: 1;
+    }
+}

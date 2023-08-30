@@ -6,6 +6,7 @@ import Contact from '../Contact/Contact';
 import About from '../About/About';
 import { useState, useEffect } from 'react'; // Import useState and useEffect from React
 import Skills from '../Skills/Skills';
+import WordFlicker from './WordFlicker';
 
 const backgrounds = [
     "linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%)",
@@ -26,56 +27,6 @@ const Home = () => {
     };
 
     useEffect(() => {
-        // Your JavaScript code here
-        let words = ["Engineer", "Programmer", "Full Stack Developer"];
-        let part;
-        let i = 0;
-        let offset = 0;
-        let len = words.length;
-        let forwards = true;
-        let skip_count = 0;
-        let skip_delay = 15;
-        let speed = 70;
-
-        const wordflick = function () {
-            setInterval(function () {
-                if (forwards) {
-                    if (offset >= words[i].length) {
-                        ++skip_count;
-                        if (skip_count === skip_delay) {
-                            forwards = false;
-                            skip_count = 0;
-                        }
-                    }
-                } else {
-                    if (offset === 0) {
-                        forwards = true;
-                        i++;
-                        offset = 0;
-                        if (i >= len) {
-                            i = 0;
-                        }
-                    }
-                }
-                part = words[i].substr(0, offset);
-                if (skip_count === 0) {
-                    if (forwards) {
-                        offset++;
-                    } else {
-                        offset--;
-                    }
-                }
-                const wordElement = document.querySelector('.word');
-                if (wordElement) {
-                    wordElement.innerHTML = part;
-                }
-            }, speed);
-        };
-
-        window.addEventListener('load', () => {
-            wordflick();
-        });
-
         // Set an interval to change the background every 5 seconds
         const interval = setInterval(changeBackground, 2000);
 
@@ -93,7 +44,7 @@ const Home = () => {
                 </div>
                 <div className='myText'>
                     <div><h1>Hi, I am Sanjeet</h1></div>
-                    <div className="word"></div>
+                    <WordFlicker />
                 </div>
                 
             </div>
