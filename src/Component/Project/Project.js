@@ -22,8 +22,8 @@ const Project = () => {
                         </h6>
                         <p>HTML | CSS | JavaScript</p>
                         
-                        <button onClick={() => window.location.href='https://github.com/sanjeetsk/ShopsMore.git'}>GitRepo</button>
-                        <button onClick={() => window.location.href='https://peaceful-unicorn-b7ab6a.netlify.app/'}>View Demo</button>
+                        <button onClick={() => window.location.href='https://github.com/sanjeetsk/ShopsMore.git'}> GitRepo </button>
+                        <button onClick={() => window.location.href='https://peaceful-unicorn-b7ab6a.netlify.app/'}> View Demo </button>
                     </div>
 
                 </div>
@@ -40,8 +40,8 @@ const Project = () => {
                         </h6>
                         <p>HTML | CSS | JavaScript | REACT</p>
                         
-                        <button onClick={() => window.location.href='https://github.com/sanjeetsk/contest-1july.git'}>GitRepo</button>
-                        <button onClick={() => window.location.href='https://ornate-madeleine-df7d30.netlify.app/'}>View Demo</button>
+                        <button onClick={() => window.location.href='https://github.com/sanjeetsk/contest-1july.git'}> GitRepo </button>
+                        <button onClick={() => window.location.href='https://ornate-madeleine-df7d30.netlify.app/'}> View Demo </button>
                     </div>
 
                 </div>
@@ -58,8 +58,8 @@ const Project = () => {
                         </h6>
                         <p>HTML | CSS | JavaScript | REACT</p>
                         
-                        <button onClick={() => window.location.href='https://github.com/sanjeetsk/contest-26aug'}>GitRepo</button>
-                        <button onClick={() => window.location.href='https://sparkly-parfait-1a1aa7.netlify.app/'}>View Demo</button>
+                        <button onClick={() => window.location.href='https://github.com/sanjeetsk/contest-26aug'}> GitRepo </button>
+                        <button onClick={() => window.location.href='https://sparkly-parfait-1a1aa7.netlify.app/'}> View Demo </button>
                     </div>
 
                 </div>
@@ -75,8 +75,8 @@ const Project = () => {
                             Tech Used:
                         </h6>
                         <p>HTML | CSS | JavaScript | REACT</p>
-                        <button onClick={() => window.location.href='https://github.com/sanjeetsk/images-bazar.git'}>GitRepo</button>
-                        <button onClick={() => window.location.href='https://sanjeetsk.github.io/images-bazar/'}>View Demo</button>
+                        <button onClick={() => window.location.href='https://github.com/sanjeetsk/images-bazar.git'}> GitRepo </button>
+                        <button onClick={() => window.location.href='https://sanjeetsk.github.io/images-bazar/'}> View Demo </button>
                     </div>
 
                 </div>

@@ -22,6 +22,10 @@ h1 {
     gap: 20px;
 }
 
+.project:hover{
+    transform: scale(1.1);
+}
+
 .detail {
     color: white;
 }
@@ -33,10 +37,12 @@ h1 {
 }
 
 .detail button {
+    background-color: deepskyblue;
+    padding: 2px;
     font-size: 12px;
     margin: 2px;
-    outline: none !important;
-    cursor: pointer;
+    border: none;
+    border-radius: 5px;
     transition: all ease-in-out .1s;
 }
 
