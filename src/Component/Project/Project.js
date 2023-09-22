@@ -1,7 +1,7 @@
 import shop from './shop.png'
-import store from './shoppingCart.png'
-import imageBazaar from './imagesBazar.png'
+import dictionaryApp from './DictionaryApp.png'
 import bookStore from './bookStore.png'
+import financly from './financly.png'
 import "./Project.css";
 
 const Project = () => {
@@ -9,6 +9,24 @@ const Project = () => {
         <div id="projectPage">
             <h1>Projects</h1>
             <div className="projects">
+                <div className="project">
+                    <div className="img">
+                        <img src={financly} alt='img' />
+                    </div>
+                    <div className="detail">
+                        <h5>Financly</h5>
+                        <p>A personal finance tracker, one can easily track their income, daily expenses, and closing balance.</p>
+                        <br></br>
+                        <h6>
+                            Tech Used:
+                        </h6>
+                        <p>HTML | CSS | React | Firebase | AntDesign</p>
+                        <button onClick={() => window.location.href = 'https://github.com/sanjeetsk/financly'}> GitRepo </button>
+                        <button onClick={() => window.location.href = 'https://financly-app.netlify.app/'}> View Demo </button>
+                    </div>
+
+                </div>
+
                 <div className="project">
                     <div className="img">
                         <img src={shop} alt='img' />
@@ -21,30 +39,32 @@ const Project = () => {
                             Tech Used:
                         </h6>
                         <p>HTML | CSS | JavaScript</p>
-                        
-                        <button onClick={() => window.location.href='https://github.com/sanjeetsk/ShopsMore.git'}> GitRepo </button>
-                        <button onClick={() => window.location.href='https://peaceful-unicorn-b7ab6a.netlify.app/'}> View Demo </button>
+
+                        <button onClick={() => window.location.href = 'https://github.com/sanjeetsk/ShopsMore.git'}> GitRepo </button>
+                        <button onClick={() => window.location.href = 'https://shopsmore.netlify.app/'}> View Demo </button>
                     </div>
 
                 </div>
+
                 <div className="project">
                     <div className="img">
-                        <img src={store} alt='img' />
+                        <img src={dictionaryApp} alt='img' />
                     </div>
                     <div className="detail">
-                        <h5>ShoppingCart</h5>
-                        <p>A shopping cart made using create-react-app, has Home Page and Cart Page. </p>
+                        <h5>DictionaryApp</h5>
+                        <p>A dictionary App made using REACT REDUX, where user can find words meaning and their history.</p>
                         <br></br>
                         <h6>
                             Tech Used:
                         </h6>
-                        <p>HTML | CSS | JavaScript | REACT</p>
-                        
-                        <button onClick={() => window.location.href='https://github.com/sanjeetsk/contest-1july.git'}> GitRepo </button>
-                        <button onClick={() => window.location.href='https://ornate-madeleine-df7d30.netlify.app/'}> View Demo </button>
+                        <p>HTML | CSS | REACT | REDUX</p>
+
+                        <button onClick={() => window.location.href = 'https://github.com/sanjeetsk/dictionary-app'}> GitRepo </button>
+                        <button onClick={() => window.location.href = 'https://my-app-dictionary.netlify.app/'}> View Demo </button>
                     </div>
 
                 </div>
+
                 <div className="project">
                     <div className="img">
                         <img src={bookStore} alt='img' />
@@ -56,30 +76,14 @@ const Project = () => {
                         <h6>
                             Tech Used:
                         </h6>
-                        <p>HTML | CSS | JavaScript | REACT</p>
-                        
-                        <button onClick={() => window.location.href='https://github.com/sanjeetsk/contest-26aug'}> GitRepo </button>
-                        <button onClick={() => window.location.href='https://sparkly-parfait-1a1aa7.netlify.app/'}> View Demo </button>
+                        <p>HTML | CSS | REACT</p>
+
+                        <button onClick={() => window.location.href = 'https://github.com/sanjeetsk/contest-26aug'}> GitRepo </button>
+                        <button onClick={() => window.location.href = 'https://find-book-online.netlify.app/'}> View Demo </button>
                     </div>
 
                 </div>
-                <div className="project">
-                    <div className="img">
-                        <img src={imageBazaar} alt='img' />
-                    </div>
-                    <div className="detail">
-                        <h5>ImageBazaar</h5>
-                        <p>A responsive online image store made using React.</p>
-                        <br></br>
-                        <h6>
-                            Tech Used:
-                        </h6>
-                        <p>HTML | CSS | JavaScript | REACT</p>
-                        <button onClick={() => window.location.href='https://github.com/sanjeetsk/images-bazar.git'}> GitRepo </button>
-                        <button onClick={() => window.location.href='https://sanjeetsk.github.io/images-bazar/'}> View Demo </button>
-                    </div>
 
-                </div>
             </div>
             <div className='creative-border'></div>
         </div>
