@@ -12,6 +12,7 @@ export default function Skills() {
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>JavaScript</li>
+                        <li>NodeJs</li>
                         <li>JAVA</li>
                     </ul>
                 </div>
@@ -20,6 +21,7 @@ export default function Skills() {
                     <ul className="skills-list-items">
                         <li>ReactJS</li>
                         <li>Redux</li>
+                        <li>ExpressJs</li>
                         <li>Bootstrap</li>
                         <li>Material UI</li>
                         <li>Git</li>
@@ -28,6 +30,7 @@ export default function Skills() {
                 <div className="skills-category">
                     <p className="skills-category-title"><strong>Databases & Tools:</strong></p>
                     <ul className="skills-list-items">
+                        <li>MongoDb</li>
                         <li>MySQL</li>
                         <li>Firebase</li>
                         <li>Postman</li>
